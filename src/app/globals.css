@@ -1,0 +1,206 @@
+@import 'tailwindcss';
+
+/* Paleta Merc1 (terracota + ink), alinhada ao merc-front. Tokens trocam no tema escuro;
+   os utilitários do Tailwind leem as variáveis, então nenhum componente precisa de dark:. */
+:root {
+  --bg: #f7f7f6;
+  --surface: #ffffff;
+  --surface-2: #f1f1ef;
+  --ink: #0f0f0e;
+  --ink-2: #3b3b37;
+  --muted: #6e6e68;
+  --line: #e4e4e0;
+  --accent: #d95b23;
+  --accent-ink: #b84a1b;
+  --accent-soft: #fdf1ea;
+  --primary: #171716;
+  --primary-fg: #ffffff;
+  --ok: #2f8a5b;
+  --ok-soft: #e8f4ee;
+  --danger: #c0392b;
+  --mark: #fbe3d6;
+  --shadow: 0 1px 2px rgb(15 15 14 / 0.04), 0 8px 24px -12px rgb(15 15 14 / 0.12);
+  --shadow-lg: 0 24px 64px -24px rgb(15 15 14 / 0.35);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #0f0f0e;
+    --surface: #171716;
+    --surface-2: #1f1f1d;
+    --ink: #f2f2f0;
+    --ink-2: #d4d4cf;
+    --muted: #9c9c95;
+    --line: #2b2b28;
+    --accent: #e8794a;
+    --accent-ink: #f09a72;
+    --accent-soft: rgb(217 91 35 / 0.14);
+    --primary: #f2f2f0;
+    --primary-fg: #0f0f0e;
+    --ok: #5fc08c;
+    --ok-soft: rgb(47 138 91 / 0.18);
+    --danger: #ef7d6e;
+    --mark: rgb(217 91 35 / 0.28);
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px -12px rgb(0 0 0 / 0.6);
+    --shadow-lg: 0 24px 64px -24px rgb(0 0 0 / 0.8);
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --bg: #0f0f0e;
+  --surface: #171716;
+  --surface-2: #1f1f1d;
+  --ink: #f2f2f0;
+  --ink-2: #d4d4cf;
+  --muted: #9c9c95;
+  --line: #2b2b28;
+  --accent: #e8794a;
+  --accent-ink: #f09a72;
+  --accent-soft: rgb(217 91 35 / 0.14);
+  --primary: #f2f2f0;
+  --primary-fg: #0f0f0e;
+  --ok: #5fc08c;
+  --ok-soft: rgb(47 138 91 / 0.18);
+  --danger: #ef7d6e;
+  --mark: rgb(217 91 35 / 0.28);
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px -12px rgb(0 0 0 / 0.6);
+  --shadow-lg: 0 24px 64px -24px rgb(0 0 0 / 0.8);
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-primary: var(--primary);
+  --color-primary-fg: var(--primary-fg);
+  --color-ok: var(--ok);
+  --color-ok-soft: var(--ok-soft);
+  --color-danger: var(--danger);
+  --color-mark: var(--mark);
+  --color-night: #121211;
+  --color-night-line: #3b3b37;
+  --color-night-muted: #a3a39d;
+  --color-night-text: #f2f2f0;
+  --color-night-accent: #f09a72;
+  --shadow-card: var(--shadow);
+  --shadow-float: var(--shadow-lg);
+  --font-sans: var(--font-open-sans), 'Helvetica Neue', Arial, sans-serif;
+  --font-display: var(--font-noto-serif), Georgia, serif;
+  --font-mono: var(--font-fira-code), 'SF Mono', Consolas, monospace;
+}
+
+@layer base {
+  html,
+  body {
+    min-height: 100%;
+  }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+  button {
+    cursor: pointer;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  /* Halo terracota dos blocos escuros (login, destaque e capas de módulo). */
+  .glow {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+  }
+  .glow::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: var(--glow-size, 380px);
+    aspect-ratio: 1;
+    right: var(--glow-x, -120px);
+    top: var(--glow-y, -140px);
+    border-radius: 50%;
+    background: radial-gradient(circle, rgb(217 91 35 / 0.45), rgb(217 91 35 / 0) 65%);
+    pointer-events: none;
+  }
+
+  .glow-bottom::after {
+    width: 90%;
+    top: auto;
+    right: -40%;
+    bottom: -70%;
+    background: radial-gradient(circle, rgb(217 91 35 / 0.5), rgb(217 91 35 / 0) 65%);
+  }
+
+  .poster-bg {
+    background: radial-gradient(120% 90% at 50% 40%, #fafaf8 0%, #e3e3df 60%, #d2d2cd 100%);
+  }
+}
+
+@keyframes enter {
+  from {
+    opacity: 0.4;
+    transform: translateY(6px);
+  }
+}
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.985);
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+}
+
+@utility animate-enter {
+  animation: enter 0.25s ease-out;
+}
+@utility animate-rise {
+  animation: rise 0.22s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+@utility animate-fade {
+  animation: fade 0.18s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

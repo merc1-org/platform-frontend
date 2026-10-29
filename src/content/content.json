@@ -1,0 +1,629 @@
+{
+  "schemaVersion": 1,
+  "atualizadoEm": "2026-10-29",
+  "plataforma": {
+    "nome": "Merc1 Plataforma"
+  },
+  "categorias": [
+    {
+      "id": "marketing",
+      "nome": "Marketing",
+      "icone": "megaphone",
+      "ordem": 1
+    },
+    {
+      "id": "atendimento",
+      "nome": "Atendimento",
+      "icone": "chat",
+      "ordem": 2
+    },
+    {
+      "id": "vendas",
+      "nome": "Vendas",
+      "icone": "target",
+      "ordem": 3
+    }
+  ],
+  "cursos": [
+    {
+      "id": "metodo-merc1",
+      "titulo": "Método Merc1",
+      "descricao": "Para quem quer gerar e converter os próprios clientes. As aulas abrem na área de membros da Cakto, com o mesmo e-mail da sua compra.",
+      "destaque": {
+        "titulo": "Do primeiro lead à *visita agendada*.",
+        "texto": "Funil, canais, captação, atendimento e escala. As aulas ficam na área de membros da Cakto."
+      },
+      "plataformaVideo": "cakto",
+      "url": null,
+      "modulos": [
+        {
+          "id": "introducao",
+          "titulo": "Introdução",
+          "descricao": "Como o Método Merc1 funciona e o que você vai aplicar em cada etapa.",
+          "ordem": 1,
+          "status": "publicado",
+          "url": null
+        },
+        {
+          "id": "funil",
+          "titulo": "Funil de vendas",
+          "descricao": "Do lead novo à chave na mão: as etapas e onde cada negócio trava.",
+          "ordem": 2,
+          "status": "publicado",
+          "url": null
+        },
+        {
+          "id": "visita",
+          "titulo": "Importância da visita",
+          "descricao": "Por que a visita é a métrica que mais prevê venda, e como bater sua meta.",
+          "ordem": 3,
+          "status": "publicado",
+          "url": null
+        },
+        {
+          "id": "canais",
+          "titulo": "Canais de venda",
+          "descricao": "Portais, Instagram, indicação e WhatsApp: onde investir seu tempo.",
+          "ordem": 4,
+          "status": "publicado",
+          "url": null
+        },
+        {
+          "id": "captacao",
+          "titulo": "Captando imóveis",
+          "descricao": "Captação que gera visita: como escolher e conquistar os imóveis certos.",
+          "ordem": 5,
+          "status": "publicado",
+          "url": null
+        },
+        {
+          "id": "atendimento",
+          "titulo": "Atendimento",
+          "descricao": "Velocidade de resposta, qualificação e condução até a visita.",
+          "ordem": 6,
+          "status": "publicado",
+          "url": null
+        },
+        {
+          "id": "escala",
+          "titulo": "Escala",
+          "descricao": "Rotina, processos e base de leads para vender todo mês, não só às vezes.",
+          "ordem": 7,
+          "status": "publicado",
+          "url": null
+        },
+        {
+          "id": "trafego",
+          "titulo": "Tráfego pago",
+          "descricao": "Anúncios no Meta para gerar leads próprios com custo previsível.",
+          "ordem": 8,
+          "status": "em_gravacao",
+          "url": null
+        }
+      ]
+    }
+  ],
+  "solucoes": [
+    {
+      "id": "descricao-imovel",
+      "slug": "descricao-imovel",
+      "categoria": "marketing",
+      "titulo": "Descrição de imóvel",
+      "resumo": "Transforme a ficha técnica em uma descrição que desperta desejo e gera pedido de visita.",
+      "descricao": "Você preenche os dados do imóvel e a IA escreve uma descrição pensada para o perfil de quem vai comprar. O texto abre pelo benefício mais forte, fala da rotina no bairro e termina com convite para visita. Serve para site, portal e redes.",
+      "tempoMinutos": 5,
+      "ordem": 1,
+      "status": "publicado",
+      "ferramentas": ["ChatGPT", "Claude", "Gemini"],
+      "video": {
+        "url": null,
+        "chamada": "Descrição que *vende* a visita",
+        "subtitulo": "Da ficha técnica ao texto pronto em minutos"
+      },
+      "prompt": "Você é um redator especialista no mercado imobiliário brasileiro.\n\nEscreva a descrição do imóvel abaixo para usar no meu site e nas redes sociais.\n\nDados do imóvel:\n- Tipo: [apartamento, casa, cobertura...]\n- Bairro e cidade: [bairro, cidade]\n- Área privativa: [m²]\n- Quartos / suítes / vagas: [ex.: 3 / 1 / 2]\n- Diferenciais: [varanda gourmet, sol da manhã, andar alto...]\n- Condomínio e lazer: [itens do condomínio]\n- Valor e condições: [valor, aceita financiamento, FGTS]\n- Comprador ideal: [família com filhos, casal jovem, investidor...]\n\nRegras:\n1. Abra com o benefício mais forte para esse comprador, não com a metragem.\n2. Escreva 3 parágrafos curtos e uma lista com até 6 destaques.\n3. Fale da rotina de quem vai morar ali: escola, trabalho, comércio e lazer próximos.\n4. Não invente nenhuma informação que não esteja nos dados acima.\n5. Termine com um convite para agendar visita pelo WhatsApp.\n\nEntregue também 3 opções de título com até 60 caracteres.",
+      "arquivos": [
+        {
+          "tipo": "guia",
+          "formato": "pdf",
+          "titulo": "Guia Descrição de imóvel",
+          "descricao": "prompt + exemplos",
+          "url": null
+        }
+      ],
+      "aulasRelacionadas": [
+        {
+          "curso": "metodo-merc1",
+          "modulo": "canais"
+        },
+        {
+          "curso": "metodo-merc1",
+          "modulo": "captacao"
+        }
+      ]
+    },
+    {
+      "id": "anuncio-portal",
+      "slug": "anuncio-portal",
+      "categoria": "marketing",
+      "titulo": "Anúncio de portal",
+      "resumo": "Título e texto para ZAP, Viva Real e OLX com as palavras que o comprador pesquisa.",
+      "descricao": "Portal é busca: o comprador filtra por bairro, quartos e preço, e depois escolhe pelo título e pela primeira foto. Este prompt escreve título e texto com as palavras que ele procura, num formato direto, sem caixa alta e sem exagero.",
+      "tempoMinutos": 5,
+      "ordem": 2,
+      "status": "publicado",
+      "ferramentas": ["ChatGPT", "Claude", "Gemini"],
+      "video": {
+        "url": null,
+        "chamada": "Apareça *antes* do concorrente",
+        "subtitulo": "Anúncio escrito para busca de portal"
+      },
+      "prompt": "Você é especialista em anúncios para portais imobiliários (ZAP Imóveis, Viva Real e OLX).\n\nCrie o anúncio deste imóvel:\n- Tipo e finalidade: [apartamento à venda, casa para alugar...]\n- Bairro, cidade e referência próxima: [ex.: Batel, Curitiba, a 5 min do Pátio Batel]\n- Área / quartos / suítes / vagas: [dados]\n- Três maiores diferenciais: [diferencial 1], [diferencial 2], [diferencial 3]\n- Valor, condomínio e IPTU: [valores]\n\nRegras:\n1. Título curto (até 60 caracteres) com tipo, bairro e o maior diferencial.\n2. Primeira frase responde: por que este imóvel e não o do lado?\n3. Use os termos que o comprador digita na busca (tipo, bairro, nº de quartos, perto de metrô, escola etc.).\n4. Sem CAIXA ALTA, sem emoji, sem \"oportunidade única\".\n5. Liste a ficha técnica no final, em tópicos.\n\nEntregue 3 variações de título para eu testar qual gera mais contato.",
+      "arquivos": [
+        {
+          "tipo": "guia",
+          "formato": "pdf",
+          "titulo": "Guia Anúncio de portal",
+          "descricao": "prompt + exemplos",
+          "url": null
+        }
+      ],
+      "aulasRelacionadas": [
+        {
+          "curso": "metodo-merc1",
+          "modulo": "canais"
+        },
+        {
+          "curso": "metodo-merc1",
+          "modulo": "trafego"
+        }
+      ]
+    },
+    {
+      "id": "textos-captacao",
+      "slug": "textos-captacao",
+      "categoria": "marketing",
+      "titulo": "Textos de captação",
+      "resumo": "Mensagens e posts para conquistar proprietários e aumentar sua carteira de imóveis.",
+      "descricao": "Captar bem é metade da venda. Você recebe quatro abordagens: post para Instagram, mensagem para proprietário conhecido, mensagem para quem anuncia por conta própria e um texto para deixar no condomínio.",
+      "tempoMinutos": 10,
+      "ordem": 3,
+      "status": "publicado",
+      "ferramentas": ["ChatGPT", "Claude", "Gemini"],
+      "video": {
+        "url": null,
+        "chamada": "Mais imóveis, *mais visitas*",
+        "subtitulo": "Abordagens prontas para quem quer vender"
+      },
+      "prompt": "Você é um corretor de imóveis experiente em captação.\n\nMinha região de atuação: [bairros e cidade]\nTipo de imóvel que quero captar: [ex.: apartamentos de 2 e 3 quartos até R$ 900 mil]\nMeus diferenciais: [anos de mercado, nº de vendas no bairro, como divulgo os imóveis]\n\nEscreva:\n1. Um post para Instagram convidando proprietários da região a anunciar comigo (legenda de até 120 palavras + 3 opções de frase para a arte).\n2. Uma mensagem de WhatsApp para um proprietário que já conheço.\n3. Uma mensagem para um proprietário que anuncia por conta própria, sem soar como ataque ao trabalho dele.\n4. Um texto curto para deixar na portaria ou no grupo do condomínio.\n\nTom: confiante, próximo, sem pressão. Sempre proponha um próximo passo concreto (avaliação gratuita, visita de 15 minutos).",
+      "arquivos": [
+        {
+          "tipo": "guia",
+          "formato": "pdf",
+          "titulo": "Guia Textos de captação",
+          "descricao": "prompt + exemplos",
+          "url": null
+        }
+      ],
+      "aulasRelacionadas": [
+        {
+          "curso": "metodo-merc1",
+          "modulo": "captacao"
+        }
+      ]
+    },
+    {
+      "id": "roteiros-reels",
+      "slug": "roteiros-reels",
+      "categoria": "marketing",
+      "titulo": "Roteiros de Reels",
+      "resumo": "Roteiros de 30 a 60 segundos com gancho, desenvolvimento e chamada para o WhatsApp.",
+      "descricao": "Cada roteiro vem dividido em cenas, com a fala, o texto na tela e a duração. O gancho dos primeiros segundos é o que segura a pessoa, então você recebe opções diferentes para testar.",
+      "tempoMinutos": 10,
+      "ordem": 4,
+      "status": "publicado",
+      "ferramentas": ["ChatGPT", "Claude", "Gemini"],
+      "video": {
+        "url": null,
+        "chamada": "Os *3 primeiros segundos* decidem",
+        "subtitulo": "Roteiros cena a cena para gravar no celular"
+      },
+      "prompt": "Você é roteirista de vídeos curtos para corretores de imóveis.\n\nCrie 5 roteiros de Reels sobre: [tema, ex.: tour pelo apartamento X, dica de financiamento, por que morar no bairro Y]\nMeu público: [quem quero atrair]\nMinha cidade: [cidade]\n\nPara cada roteiro, entregue uma tabela com as colunas:\nCena | O que aparece | O que eu falo | Texto na tela | Duração\n\nRegras:\n1. Duração total entre 30 e 60 segundos.\n2. O gancho (0 a 3 s) precisa criar curiosidade ou quebrar uma crença.\n3. Uma ideia por vídeo.\n4. Termine pedindo para a pessoa me chamar no WhatsApp com uma palavra-chave (ex.: \"manda VISITA\").\n5. Sugira a legenda e 5 hashtags locais.",
+      "arquivos": [
+        {
+          "tipo": "guia",
+          "formato": "pdf",
+          "titulo": "Guia Roteiros de Reels",
+          "descricao": "prompt + exemplos",
+          "url": null
+        }
+      ],
+      "aulasRelacionadas": [
+        {
+          "curso": "metodo-merc1",
+          "modulo": "canais"
+        },
+        {
+          "curso": "metodo-merc1",
+          "modulo": "trafego"
+        }
+      ]
+    },
+    {
+      "id": "legendas-posts",
+      "slug": "legendas-posts",
+      "categoria": "marketing",
+      "titulo": "Legendas e ideias de posts",
+      "resumo": "Calendário de 30 dias de conteúdo com legendas prontas para o seu Instagram.",
+      "descricao": "Um calendário de 30 dias que mistura imóveis, bastidores, dicas e prova social. Cada dia vem com o formato (carrossel, Reels ou story), a ideia e a legenda pronta.",
+      "tempoMinutos": 15,
+      "ordem": 5,
+      "status": "publicado",
+      "ferramentas": ["ChatGPT", "Claude", "Gemini"],
+      "video": {
+        "url": null,
+        "chamada": "Um mês de conteúdo *em uma tarde*",
+        "subtitulo": "Calendário com tema, formato e legenda"
+      },
+      "prompt": "Você é estrategista de conteúdo para corretores de imóveis.\n\nMonte um calendário de 30 dias de posts para o meu Instagram.\n- Cidade e bairros: [onde atuo]\n- Tipo de imóvel que mais vendo: [tipo e faixa de preço]\n- Meu estilo: [descontraído, técnico, sofisticado...]\n\nDistribua assim: 40% imóveis e bairros, 30% dicas para quem quer comprar, 20% bastidores e prova social, 10% chamadas diretas para o WhatsApp.\n\nEntregue uma tabela com: Dia | Formato (carrossel, Reels, story) | Ideia | Legenda pronta | Chamada para ação.\n\nLegendas com até 100 palavras, primeira linha que prende e sem excesso de emoji.",
+      "arquivos": [
+        {
+          "tipo": "guia",
+          "formato": "pdf",
+          "titulo": "Guia Legendas e ideias de posts",
+          "descricao": "prompt + exemplos",
+          "url": null
+        }
+      ],
+      "aulasRelacionadas": [
+        {
+          "curso": "metodo-merc1",
+          "modulo": "canais"
+        }
+      ]
+    },
+    {
+      "id": "instagram-whatsapp",
+      "slug": "instagram-whatsapp",
+      "categoria": "atendimento",
+      "titulo": "Instagram → WhatsApp",
+      "resumo": "Respostas para direct e comentários que levam o seguidor para a conversa no WhatsApp.",
+      "descricao": "Quem comenta \"valor?\" no seu post é um lead. Este prompt cria respostas para comentários e direct que puxam a conversa para o WhatsApp, onde você consegue qualificar e agendar.",
+      "tempoMinutos": 5,
+      "ordem": 6,
+      "status": "publicado",
+      "ferramentas": ["ChatGPT", "Claude", "Gemini"],
+      "video": {
+        "url": null,
+        "chamada": "Do comentário *à conversa*",
+        "subtitulo": "Leve o seguidor para onde a venda acontece"
+      },
+      "prompt": "Você é especialista em atendimento de corretores no Instagram.\n\nCrie respostas para levar a pessoa do Instagram para o meu WhatsApp ([seu número ou link]).\n\nSituações:\n1. Comentário perguntando o valor de um imóvel.\n2. Comentário \"tenho interesse\" ou só um emoji.\n3. Direct perguntando se o imóvel ainda está disponível.\n4. Direct de alguém que só está \"olhando\" e não tem pressa.\n5. Resposta a um story com pergunta sobre financiamento.\n\nPara cada uma, entregue:\n- Resposta pública (quando for comentário), curta e sem passar o valor.\n- Mensagem no direct convidando para o WhatsApp com um motivo claro (fotos, vídeo, simulação).\n- Primeira mensagem que eu mando quando a pessoa chegar no WhatsApp.\n\nTom: próximo, rápido, nada de robô.",
+      "arquivos": [
+        {
+          "tipo": "guia",
+          "formato": "pdf",
+          "titulo": "Guia Instagram → WhatsApp",
+          "descricao": "prompt + exemplos",
+          "url": null
+        }
+      ],
+      "aulasRelacionadas": [
+        {
+          "curso": "metodo-merc1",
+          "modulo": "atendimento"
+        },
+        {
+          "curso": "metodo-merc1",
+          "modulo": "funil"
+        }
+      ]
+    },
+    {
+      "id": "scripts-whatsapp",
+      "slug": "scripts-whatsapp",
+      "categoria": "atendimento",
+      "titulo": "Scripts de WhatsApp",
+      "resumo": "Primeira resposta, apresentação de imóvel e convite para visita, no tom certo.",
+      "descricao": "Mensagens para cada momento da conversa: a primeira resposta ao lead, a apresentação do imóvel, o envio de opções parecidas e o convite para a visita com dois horários.",
+      "tempoMinutos": 5,
+      "ordem": 7,
+      "status": "publicado",
+      "ferramentas": ["ChatGPT", "Claude", "Gemini"],
+      "video": {
+        "url": null,
+        "chamada": "Responda em *minutos*, não em horas",
+        "subtitulo": "Mensagens prontas para cada etapa"
+      },
+      "prompt": "Você é um corretor que vende muito pelo WhatsApp.\n\nEscreva mensagens curtas (no máximo 3 linhas cada) para:\n1. Primeira resposta a um lead que veio de [portal / anúncio / Instagram] perguntando sobre [imóvel].\n2. Apresentação do imóvel com os 3 pontos mais fortes: [ponto 1], [ponto 2], [ponto 3].\n3. Envio de 2 opções parecidas quando o imóvel não serve.\n4. Convite para visita oferecendo dois horários: [horário 1] ou [horário 2].\n5. Confirmação de visita no dia anterior.\n6. Mensagem pós-visita pedindo a opinião.\n\nRegras: uma pergunta por mensagem, nada de áudio longo, linguagem do dia a dia e sempre um próximo passo.",
+      "arquivos": [
+        {
+          "tipo": "guia",
+          "formato": "pdf",
+          "titulo": "Guia Scripts de WhatsApp",
+          "descricao": "prompt + exemplos",
+          "url": null
+        }
+      ],
+      "aulasRelacionadas": [
+        {
+          "curso": "metodo-merc1",
+          "modulo": "atendimento"
+        }
+      ]
+    },
+    {
+      "id": "scripts-qualificacao",
+      "slug": "scripts-qualificacao",
+      "categoria": "atendimento",
+      "titulo": "Scripts de qualificação",
+      "resumo": "Perguntas para descobrir orçamento, prazo e forma de pagamento sem parecer interrogatório.",
+      "descricao": "As perguntas certas, na ordem certa, para saber se o lead tem orçamento, prazo e forma de pagamento definidos. No fim, a IA sugere como classificar o lead e qual o próximo passo.",
+      "tempoMinutos": 5,
+      "ordem": 8,
+      "status": "publicado",
+      "ferramentas": ["ChatGPT", "Claude", "Gemini"],
+      "video": {
+        "url": null,
+        "chamada": "Descubra quem *compra agora*",
+        "subtitulo": "Qualificação natural, em poucas mensagens"
+      },
+      "prompt": "Você é especialista em qualificação de leads imobiliários.\n\nCrie um roteiro de qualificação pelo WhatsApp para leads interessados em [tipo de imóvel] na faixa de [faixa de preço].\n\nPreciso descobrir, nesta ordem:\n1. Para quem é o imóvel (moradia ou investimento) e quem decide junto.\n2. Região e o que não pode faltar.\n3. Prazo para se mudar ou comprar.\n4. Forma de pagamento: à vista, financiamento, FGTS, imóvel na troca.\n5. Se já tem crédito aprovado ou simulação.\n\nRegras:\n- No máximo 6 mensagens, uma pergunta por vez.\n- Cada pergunta precisa soar como conversa, não como formulário.\n- Explique em uma linha por que cada pergunta importa.\n\nNo final, crie uma régua simples: quente (visita esta semana), morno (nutrir por 30 dias) e frio (base de reativação), com o critério de cada um.",
+      "arquivos": [
+        {
+          "tipo": "guia",
+          "formato": "pdf",
+          "titulo": "Guia Scripts de qualificação",
+          "descricao": "prompt + exemplos",
+          "url": null
+        }
+      ],
+      "aulasRelacionadas": [
+        {
+          "curso": "metodo-merc1",
+          "modulo": "atendimento"
+        },
+        {
+          "curso": "metodo-merc1",
+          "modulo": "funil"
+        }
+      ]
+    },
+    {
+      "id": "kit-ligacoes",
+      "slug": "kit-ligacoes",
+      "categoria": "vendas",
+      "titulo": "Kit de ligações",
+      "resumo": "Roteiros para ligar para lead novo, lead antigo e proprietário, com respostas prontas.",
+      "descricao": "Três roteiros de ligação com abertura, perguntas e fechamento. Cada um traz respostas para as situações mais comuns, como \"estou ocupado\" e \"manda pelo WhatsApp\".",
+      "tempoMinutos": 10,
+      "ordem": 9,
+      "status": "publicado",
+      "ferramentas": ["ChatGPT", "Claude", "Gemini"],
+      "video": {
+        "url": null,
+        "chamada": "Ligação que *agenda visita*",
+        "subtitulo": "Roteiro, perguntas e saídas para cada cenário"
+      },
+      "prompt": "Você é um treinador de corretores especializado em ligações.\n\nCrie 3 roteiros de ligação de até 3 minutos:\n1. Lead novo que pediu informação sobre [imóvel] há menos de 1 hora.\n2. Lead que não responde há [nº] dias.\n3. Proprietário de imóvel em [bairro] que eu quero captar.\n\nPara cada roteiro:\n- Abertura em 10 segundos (quem sou e por que estou ligando).\n- 3 perguntas para entender o momento da pessoa.\n- Fechamento sempre com convite para visita ou reunião, oferecendo dois horários.\n- Como responder: \"estou ocupado agora\", \"manda pelo WhatsApp\", \"só estou pesquisando\".\n\nEscreva como fala, não como texto. Frases curtas.",
+      "arquivos": [
+        {
+          "tipo": "guia",
+          "formato": "pdf",
+          "titulo": "Guia Kit de ligações",
+          "descricao": "prompt + exemplos",
+          "url": null
+        }
+      ],
+      "aulasRelacionadas": [
+        {
+          "curso": "metodo-merc1",
+          "modulo": "visita"
+        },
+        {
+          "curso": "metodo-merc1",
+          "modulo": "atendimento"
+        }
+      ]
+    },
+    {
+      "id": "follow-up",
+      "slug": "follow-up",
+      "categoria": "vendas",
+      "titulo": "Follow-up e nutrição",
+      "resumo": "Sequência de mensagens para quem sumiu depois do primeiro contato.",
+      "descricao": "Uma sequência de mensagens para os 14 dias depois do primeiro contato. Cada mensagem entrega algo útil, como um imóvel novo, uma simulação ou uma informação do bairro, em vez de só perguntar \"e aí?\".",
+      "tempoMinutos": 10,
+      "ordem": 10,
+      "status": "publicado",
+      "ferramentas": ["ChatGPT", "Claude", "Gemini"],
+      "video": {
+        "url": null,
+        "chamada": "Quem some *ainda pode comprar*",
+        "subtitulo": "Sequência de 14 dias sem ser chato"
+      },
+      "prompt": "Você é especialista em follow-up para corretores de imóveis.\n\nCrie uma sequência de follow-up pelo WhatsApp para um lead que conversou comigo sobre [imóvel ou perfil buscado] e parou de responder.\n\nSequência: dia 1, dia 3, dia 7, dia 10 e dia 14.\n\nRegras:\n1. Toda mensagem entrega valor: imóvel novo, simulação, notícia do bairro, vídeo, dúvida comum.\n2. Nunca use \"e aí, conseguiu ver?\".\n3. Máximo de 3 linhas por mensagem.\n4. A do dia 14 encerra com elegância e deixa a porta aberta.\n\nPara cada mensagem, diga o objetivo dela em uma linha.",
+      "arquivos": [
+        {
+          "tipo": "guia",
+          "formato": "pdf",
+          "titulo": "Guia Follow-up e nutrição",
+          "descricao": "prompt + exemplos",
+          "url": null
+        }
+      ],
+      "aulasRelacionadas": [
+        {
+          "curso": "metodo-merc1",
+          "modulo": "funil"
+        },
+        {
+          "curso": "metodo-merc1",
+          "modulo": "escala"
+        }
+      ]
+    },
+    {
+      "id": "reativacao-base",
+      "slug": "reativacao-base",
+      "categoria": "vendas",
+      "titulo": "Reativação da base",
+      "resumo": "Mensagens para voltar a falar com leads parados há meses na sua lista.",
+      "descricao": "Leads antigos já conhecem você e custaram dinheiro para chegar. O prompt cria mensagens de retomada por tipo de lead, com um gancho atual para justificar o contato.",
+      "tempoMinutos": 10,
+      "ordem": 11,
+      "status": "publicado",
+      "ferramentas": ["ChatGPT", "Claude", "Gemini"],
+      "video": {
+        "url": null,
+        "chamada": "Sua base é *dinheiro parado*",
+        "subtitulo": "Volte a conversar com quem já te procurou"
+      },
+      "prompt": "Você é especialista em reativação de base para corretores de imóveis.\n\nTenho leads que não conversam comigo há [3, 6, 12] meses. Eles buscavam [tipo de imóvel] em [região].\n\nCrie mensagens de reativação para 3 grupos:\n1. Lead que chegou a visitar imóvel e não comprou.\n2. Lead que só pediu informação e sumiu.\n3. Lead que disse que ia comprar \"mais para frente\".\n\nCada mensagem precisa:\n- Ter um gancho atual (queda de juros, lançamento novo, imóvel que acabou de entrar, mudança no bairro).\n- Ser curta (até 3 linhas) e terminar com uma pergunta fácil de responder com sim ou não.\n- Ter uma segunda mensagem para quem responder \"sim\".\n\nInclua também 3 variações de abertura para eu testar.",
+      "arquivos": [
+        {
+          "tipo": "guia",
+          "formato": "pdf",
+          "titulo": "Guia Reativação da base",
+          "descricao": "prompt + exemplos",
+          "url": null
+        }
+      ],
+      "aulasRelacionadas": [
+        {
+          "curso": "metodo-merc1",
+          "modulo": "escala"
+        },
+        {
+          "curso": "metodo-merc1",
+          "modulo": "funil"
+        }
+      ]
+    },
+    {
+      "id": "objecoes",
+      "slug": "objecoes",
+      "categoria": "vendas",
+      "titulo": "Respostas a objeções",
+      "resumo": "Como responder a \"tá caro\", \"vou pensar\" e \"já tenho corretor\" sem perder o cliente.",
+      "descricao": "Respostas para as objeções que mais aparecem no atendimento imobiliário. Cada uma vem em versão para WhatsApp e para conversa ao vivo, com uma pergunta para entender o que está por trás da objeção.",
+      "tempoMinutos": 5,
+      "ordem": 12,
+      "status": "publicado",
+      "ferramentas": ["ChatGPT", "Claude", "Gemini"],
+      "video": {
+        "url": null,
+        "chamada": "Do *\"vou pensar\"* ao sim",
+        "subtitulo": "Respostas que mantêm a conversa viva"
+      },
+      "prompt": "Você é um treinador de vendas imobiliárias.\n\nCrie respostas para estas objeções:\n1. \"Está caro.\"\n2. \"Vou pensar e te falo.\"\n3. \"Já tenho corretor.\"\n4. \"Vou esperar os juros caírem.\"\n5. \"Preciso conversar com meu marido / minha esposa.\"\n6. \"Vi mais barato em outro lugar.\"\n7. [outra objeção que você escuta muito]\n\nContexto do imóvel: [tipo, região, faixa de preço]\n\nPara cada objeção, entregue:\n- O que geralmente está por trás dela (uma linha).\n- Uma pergunta para entender o motivo real.\n- Resposta para WhatsApp (até 3 linhas).\n- Resposta para falar ao vivo, na visita ou por telefone.\n\nNunca discuta com o cliente. A meta é manter a conversa e chegar na visita.",
+      "arquivos": [
+        {
+          "tipo": "guia",
+          "formato": "pdf",
+          "titulo": "Guia Respostas a objeções",
+          "descricao": "prompt + exemplos",
+          "url": null
+        }
+      ],
+      "aulasRelacionadas": [
+        {
+          "curso": "metodo-merc1",
+          "modulo": "visita"
+        },
+        {
+          "curso": "metodo-merc1",
+          "modulo": "atendimento"
+        }
+      ]
+    }
+  ],
+  "recursos": [
+    {
+      "id": "formacao",
+      "titulo": "Método Merc1",
+      "descricao": "Comercial, metas de visita e canais de venda, em aulas gravadas.",
+      "icone": "cap",
+      "status": "disponivel",
+      "rotulo": "disponível",
+      "acao": {
+        "tipo": "rota",
+        "destino": "/formacao",
+        "texto": "Ver módulos"
+      },
+      "menu": null
+    },
+    {
+      "id": "solucoes",
+      "titulo": "Soluções prontas",
+      "descricao": "Prompts testados para anúncio, conteúdo, atendimento e vendas.",
+      "icone": "spark",
+      "status": "disponivel",
+      "rotulo": "disponível",
+      "acao": {
+        "tipo": "rota",
+        "destino": "/solucoes",
+        "texto": "Abrir soluções"
+      },
+      "menu": null
+    },
+    {
+      "id": "ia-whatsapp",
+      "titulo": "IA no seu WhatsApp",
+      "descricao": "Atende, qualifica, agenda e reativa seus leads no WhatsApp.",
+      "icone": "chat",
+      "status": "disponivel",
+      "rotulo": "no app Merc1",
+      "acao": {
+        "tipo": "externo",
+        "destino": "https://app.merc1.com",
+        "texto": "Abrir app Merc1"
+      },
+      "menu": {
+        "grupo": "ferramentas",
+        "titulo": "IA no WhatsApp"
+      }
+    },
+    {
+      "id": "consultor-ia",
+      "titulo": "Consultor IA 24h",
+      "descricao": "Tire dúvidas do dia a dia com uma IA treinada no Método Merc1.",
+      "icone": "bot",
+      "status": "em_breve",
+      "rotulo": "em breve",
+      "aviso": "O Consultor IA 24h chega em breve",
+      "acao": null,
+      "menu": {
+        "grupo": "chegando",
+        "titulo": "Consultor IA 24h"
+      }
+    },
+    {
+      "id": "mentorias",
+      "titulo": "Mentorias",
+      "descricao": "Encontros semanais em grupo com especialistas da Merc1.",
+      "icone": "calendar",
+      "status": "em_breve",
+      "rotulo": "em breve",
+      "aviso": "A agenda de mentorias chega em breve",
+      "acao": null,
+      "menu": {
+        "grupo": "chegando",
+        "titulo": "Mentorias"
+      }
+    },
+    {
+      "id": "comunidade",
+      "titulo": "Comunidade",
+      "descricao": "Troca com outros corretores que aplicam o método.",
+      "icone": "users",
+      "status": "em_breve",
+      "rotulo": "em breve",
+      "aviso": "A comunidade abre em breve",
+      "acao": null,
+      "menu": {
+        "grupo": "chegando",
+        "titulo": "Comunidade"
+      }
+    }
+  ]
+}
